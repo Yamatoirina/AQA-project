@@ -13,4 +13,21 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile("io.github.bonigarcia:webdrivermanager:3.6.1")
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+    compile group: 'ru.stqa.selenium', name: 'webdriver-factory', version: '4.3'
+
+
+    compile group: 'io.qameta.allure', name: 'allure-junit4', version: '2.12.1'
+    compile group: 'io.qameta.allure', name: 'allure-gradle', version: '2.5'
+
+    compile ('net.lightbody.bmp:browsermob-core:2.1.5')
+            { exclude module: 'selenium' }
+
+    compile 'com.codeborne:selenide:5.1.0'
+    compile 'io.cucumber:cucumber-java:4.2.5'
+
+
+
 }
